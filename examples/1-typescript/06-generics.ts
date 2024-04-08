@@ -12,7 +12,7 @@ interface IMagazine {
     barcode: number;
 }
 
-class Library<T> {
+class Library<T> { // El T es como un generico
     private items: T[] = [];
 
     add(item: T) {
@@ -24,7 +24,7 @@ class Library<T> {
     }
 }
 
-const booksLibrary = new Library<IBook>();
+const booksLibrary = new Library<IBook>(); // Aqui solo accetaremos interfaces como las de IBook
 booksLibrary.add({
     title: "The lord of the rings",
     author: "Rowling",

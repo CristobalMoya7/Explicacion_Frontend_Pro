@@ -1,4 +1,4 @@
-interface IStudent {
+interface IStudent { // Lo creamos como interface cuando lo vamos a usar en otras clases 
     name: string;
     age: number;
     grade: string;

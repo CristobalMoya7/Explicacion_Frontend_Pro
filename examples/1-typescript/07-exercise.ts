@@ -42,7 +42,7 @@ const products: Product[] = [
     }
 ];
 
-type FinderProduct = <T extends MinimalProduct>(producst: T[]) => T;
+type FinderProduct = <T extends MinimalProduct>(producst: T[]) => T; // Sabemos que T extiende de MinimalProduct ya que sabemos que es un price
 
 const findCheapProduct: <T extends MinimalProduct>(producst: T[]) => T = <T extends MinimalProduct>(products: T[]): T => {
     return products.reduce((prev, current) => prev.price < current.price ? prev : current);

@@ -1,8 +1,8 @@
-function formatUser(name: string, age?: number): string {
+function formatUser(name: string, age?: number): string { // Se pone la interrogacion a age para que sea opcional
     return `Name: ${name}, Age: ${age}`;
 }
 
-function printUser(name: string, age?: number): void {
+function printUser(name: string, age?: number): void { // void significa que la funcion no va a devolver nada
     console.log(`Name: ${name}, Age: ${age}`);
 }
 
